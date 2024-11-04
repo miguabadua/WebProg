@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlapping Images</title>
+    <style>
+        .image-container {
+            position: relative;
+            width: fit-content;
+            margin: 20px; /* Adjust margin as needed */
+        }
+
+        .main-image {
+            width: 300px; /* Set main image width */
+            height: auto;
+            position: relative;
+            z-index: 1; /* Keep this image on top */
+        }
+
+        .small-image {
+            width: 150px; /* Set smaller image width */
+            height: auto;
+            position: absolute;
+            top: 20px; /* Adjust the overlap vertically */
+            left: -40px; /* Offset to the left */
+            z-index: 0;
+            opacity: 0.8; /* Optional: make it semi-transparent */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="D:/Alveus/images/MayaPhoto.png" alt="Main Image" class="main-image">
+        <img src="D:/Alveus/images/MayaWinnie.png" alt="Small Image" class="small-image">
+    </div>
+</body>
+</html>
